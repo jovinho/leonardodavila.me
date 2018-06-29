@@ -1,0 +1,55 @@
+@charset "utf-8";
+$family-sans-serif: "Myriad Set Pro", "Myriad Pro", "Helvetica Neue", Helvetica,
+  Arial, sans-serif;
+$size-5: 20px;
+$size-6: 16px;
+$nav-height: 44px;
+@import "../node_modules/bulma/bulma";
+
+.hero-head {
+  padding-left: 10px;
+}
+
+.hero-profile {
+  background-color: #a6a6a6;
+  position: relative;
+  background-image: url("../assets/macbook.jpg");
+}
+
+.hero-background {
+  background-image: url(../assets/macbook.jpg);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  filter: blur(3px);
+}
+
+.profile-image-wrapper {
+  img {
+    clip-path: circle(100px at 190px 120px);
+    margin-left: 34px;
+    margin-top: 30px;
+    width: 350px;
+    height: auto;
+  }
+}
+
+.profile-image {
+  transform: rotate(180deg);
+}
+
+.container {
+  .title {
+    color: white;
+    text-shadow: 1px 1px #909090;
+  }
+
+  .subtitle {
+    color: white;
+    text-shadow: 1px 1px #909090;
+  }
+}
